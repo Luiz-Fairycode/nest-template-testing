@@ -1,0 +1,44 @@
+- conexao com banco de dados *
+- migration * - comandos no package.json
+- schemas do banco *
+- criar comandos *
+- transacao *
+- acao em cascata - salvar entitades *
+- criar eventos (só tem a pasta atualmente, falta criar um exemplo de evento) *
+- linkar eventos commit (igual .net) *
+- notification pattern (data validation para as entities e exception filter para o global) *
+- criar exception global *
+- ver como importar o ormconfig no module do banco (problems ts,js) *
+- criar authorize api - https://docs.nestjs.com/security/authorization, https://github.com/Jon-Peppinck/linkedin-clone/tree/main/api/src *
+- claims (permissoes) - https://docs.nestjs.com/security/authorization#claims-based-authorization *
+- limpeza projeto autenticacao (tirar sujeira) *
+- colocar o data.base.module na raiz do projeto (sera utilizado por todos os contextos)
+- organizar o infra/module do contexto template *
+- remover reposytory do contexto auth e deixar tudo como service (eu posso manipular o objeto do repositorio dentro do proprio service) - rever isso e pensar *
+- criar um unico ormconfig *
+- criar interfaces para o repository *
+- criar dockerfile *
+- criar docker-compose *
+- configurar firebase sso *
+- colocar firebase no .env *
+- ver pq firebase nao esta executando no docker (tentar yarn add firebase) *
+- organizar pastas e criar exemplos melhores definidos na api (documentacao) *
+- organizar nomenclaturas, apis e todo o resto (organizacao) *
+- tentar gerar o comando de build/dist no dockerfile/compose *
+  - eu deletei a imagem de dev do docker compose no docker desktop, talvez agora volte a funcionar
+    - Deixei a imagem de dev com o mesmo nome de prod, rodei a aplicacao e deu certo, depois voltei a imagem anterior de dev, e funcionou normalmente
+- criar testes unidade
+- criar outro contexto para exemplo de comunicacao entre servicos
+- ver como fazer deploy
+- criar vpn
+
+-- quando estiver pronto
+- incluir .env no gitignore
+
+-- futuros
+- incluir new relic
+- incluir o sentry.io
+- criar keycloack
+
+-- comandos
+- docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
